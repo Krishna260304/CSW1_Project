@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .carousel-image {
+            max-height: 700px;
+            object-fit: cover;
+        }
+
+        .x1 {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-success text-white text-center py-3">
+        <h1>School Management System</h1>
+    </header>
+
+    <nav class="container my-4">
+        <div class="d-flex justify-content-center">
+            <a href="#" class="btn btn-outline-primary" onclick="redirectToAdmission()">Admission</a>
+
+            <div class="dropdown mx-2">
+                <button class="btn btn-outline-success dropdown-toggle" type="button" id="achievementsDropdown"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Achievements
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="achievementsDropdown">
+                    <li><a class="dropdown-item" href="#" onclick="redirectToAchievement('a1.html')">Achievement 1</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="redirectToAchievement('a2.html')">Achievement 2</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="redirectToAchievement('a3.html')">Achievement 3</a></li>
+                </ul>
+            </div>
+
+            <div id="x1">
+                <a href="#" class="btn btn-outline-secondary" onclick="redirectToAlumni()">Alumni</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="gallery-section" class="container my-5">
+        <h2 class="text-center mb-4">Achievement Gallery</h2>
+        <div id="achievementCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="image.png" class="d-block w-100 carousel-image" alt="Achievement 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Achievement 1</h5>
+                        <p>SOA chosen top university by Competition Success Review.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="image1.png" class="d-block w-100 carousel-image" alt="Achievement 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Achievement 2</h5>
+                        <p>All Odisha School Chess Championship 2023 at SOA University, Bhubaneswar.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="image2.png" class="d-block w-100 carousel-image" alt="Achievement 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Achievement 3</h5>
+                        <p>International Higher Education Excellence Award Conferred On SOA University In Bhubaneswar.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#achievementCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#achievementCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function redirectToAchievement(page) {
+            const confirmation = confirm("You are being redirected to the achievement page. Do you wish to continue?");
+            if (confirmation) {
+                window.location.href = page;
+            }
+        }
+
+        function redirectToAlumni() {
+            const confirmation = confirm("You are being redirected to the Alumni section. Do you wish to continue?");
+            if (confirmation) {
+                window.location.href = "Q5.html";
+            }
+        }
+
+        function redirectToAdmission() {
+            const confirmation = confirm("You are being redirected to the Admission page. Do you wish to continue?");
+            if (confirmation) {
+                window.location.href = "Registrationpage.html";
+            }
+        }
+    </script>
+</body>
+
+</html>

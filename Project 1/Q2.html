@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(18, 123, 77);
+            color: white;
+        }
+
+        #student-table-section {
+            width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid rgb(221, 221, 221);
+            border-radius: 10px;
+        }
+
+        #search-bar {
+            width: 98.4%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: 1px solid rgb(221, 221, 221);
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        thead {
+            background-color: rgb(18, 123, 77);
+            color: white;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid rgb(221, 221, 221);
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: rgb(242, 242, 242);
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .edit-btn {
+            background-color: rgb(9, 129, 177);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .delete-btn {
+            background-color: rgb(255, 77, 77);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .edit-btn:hover {
+            background-color: rgb(7, 106, 145);
+        }
+
+        .delete-btn:hover {
+            background-color: rgb(212, 63, 63);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Student Information Page</h1>
+    </header>
+    <section id="student-table-section">
+        <h2>Student Details</h2>
+        <table id="student-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Semester</th>
+                    <th>Registration Number</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Krishna Dwaipayan Das</td>
+                    <td>20</td>
+                    <td>3rd</td>
+                    <td>2341004020</td>
+                    <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Shyam Agrawal</td>
+                    <td>21</td>
+                    <td>5th</td>
+                    <td>2241003615</td>
+                    <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>

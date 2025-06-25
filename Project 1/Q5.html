@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Section</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #6c757d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-title {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card-text {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .home-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px; 
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .home-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-secondary text-white text-center py-3">
+        <h1>Alumni Achievements</h1>
+        <a href="Q4.html" class="home-btn">Home</a>
+    </header>
+
+    <section class="container my-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="images.jpg" class="card-img-top" alt="Alumni 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Albert Einstein</h5>
+                        <p class="card-text">Albert Einstein was a German-born theoretical physicist who is widely held as one of the most influential scientists. Best known for developing the theory of relativity, Einstein also made important contributions to quantum mechanics.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="Q5 2.jpg" class="card-img-top" alt="Alumni 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Steven Weinberg</h5>
+                        <p class="card-text">Steven Weinberg was an American theoretical physicist and Nobel laureate in physics for his contributions with Abdus Salam and Sheldon Glashow to the unification of the weak force and electromagnetic interaction between elementary particles</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="Q5 3.jpg" class="card-img-top w-80" alt="Alumni 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Edward Witten</h5>
+                        <p class="card-text">Edward Witten is an American theoretical physicist known for his contributions to string theory, topological quantum field theory, and various areas of mathematics. He is a professor emeritus in the school of natural sciences at the Institute for Advanced Study in Princeton</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
